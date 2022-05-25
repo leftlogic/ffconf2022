@@ -1,3 +1,28 @@
+/* Color palette */
+@font-face {
+  font-family: 'BasierSquare';
+  src: url('/fonts/basiersquare-medium-webfont.eot');
+  src: url('/fonts/basiersquare-medium-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/basiersquare-medium-webfont.woff2') format('woff2'),
+    url('/fonts/basiersquare-medium-webfont.woff') format('woff'),
+    url('/fonts/basiersquare-medium-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BasierSquare';
+  src: url('/fonts/basiersquare-regular-webfont.eot');
+  src: url('/fonts/basiersquare-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/basiersquare-regular-webfont.woff2') format('woff2'),
+    url('/fonts/basiersquare-regular-webfont.woff') format('woff'),
+    url('/fonts/basiersquare-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --c-blue: #17eced;
   --c-pink: #e72ee2;
@@ -7,8 +32,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: 'BasierSquare', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   font-size: 24px;
   font-size: 3vw;
   color: var(--c-primary);
@@ -50,11 +75,12 @@ a.alt-link {
 
 h2 {
   line-height: 1;
-  font-size: 44px;
+  font-size: 40px;
 }
 
 h3 {
   font-size: 12px;
+  white-space: nowrap;
 }
 
 header {
@@ -141,5 +167,4 @@ main ul li {
   header h3 {
     font-size: 47px;
   }
-
 }
