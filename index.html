@@ -27,14 +27,16 @@
         expect, please browse and enjoy our <a target="_blank" href="https://ffconf.org/talks">previous event talks</a>.
       </p>
 
-      <p hidden id="buynow" class="cta"><a class="button" href="https://buytickets.at/ffconf2022/707580">Buy now @
+      <p id="buynow" class="cta"><a class="button" href="https://buytickets.at/ffconf2022/707580">Buy now @
           £200+VAT</a></p>
-      <p id="available" class="cta"><span class="button">Available in <output id="output">…</output></span></p>
-      <script>
-        const t = new Date("2022-06-27 10:00:00+0100");
+      <!-- <p id="available" class="cta"><span class="button">Available in <output id="output">…</output></span></p> -->
+      <script type="nop">
+        const t = Date.parse("2022-06-27 10:00:00 BST");
+        console.log(t);
         const output = document.getElementById('output');
         function update() {
           const now = Date.now();
+
           if (now > t) {
             document.getElementById('available').hidden = true;
             document.getElementById('buynow').hidden = false;
@@ -44,6 +46,7 @@
             const seconds = ((milliseconds / 1000) % 60).toFixed(0).padStart(2, '0');
             const minutes = (((milliseconds / (1000 * 60)) % 60)).toFixed(0).padStart(2, '0');
             const hours = (((milliseconds / (1000 * 60 * 60)) % 24)).toFixed(0).padStart(2, '0');
+
 
             output.textContent = `${minutes}:${seconds}.${ms}`;
             requestAnimationFrame(update);
