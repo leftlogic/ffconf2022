@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ffconf 2020 - UK web and JavaScript conference</title>
-
-    <link rel="preload" href="/fonts/basiersquare-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/basiersquare-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./style.css">
   </head>
 
@@ -20,7 +21,54 @@
       <h3>Returns Friday 11 November</h3>
     </header>
     <main>
+      <h2>Peek-a-boo Tickets</h2>
+      <p>Limited first run of tickets available now at 2019 prices: <strong>£200+VAT</strong>.</p>
+      <p>Peek-a-boo tickets are released before our conference content is live, but if you want a feel for what to
+        expect, please browse and enjoy our <a target="_blank" href="https://ffconf.org/talks">previous event talks</a>.
+      </p>
+
+      <p hidden id="buynow" class="cta"><a class="button" href="#">Buy now @ £200+VAT</a></p>
+      <p id="available" class="cta"><span class="button">Available in <output id="output">…</output></span></p>
+      <script>
+        const t = new Date("2022-06-27 10:00:00");
+        const output = document.getElementById('output');
+        function update() {
+          const now = Date.now();
+          if (now > t) {
+            document.getElementById('available').hidden = true;
+            document.getElementById('buynow').hidden = false;
+          } else {
+            const milliseconds = (t - now);
+            const ms = (milliseconds % 1000).toFixed(0).padStart(3, '0');
+            const seconds = ((milliseconds / 1000) % 60).toFixed(0).padStart(2, '0');
+            const minutes = (((milliseconds / (1000 * 60)) % 60)).toFixed(0).padStart(2, '0');
+            const hours = (((milliseconds / (1000 * 60 * 60)) % 24)).toFixed(0).padStart(2, '0');
+
+            output.textContent = `${minutes}:${seconds}.${ms}`;
+            requestAnimationFrame(update);
+          }
+        }
+        update();
+      </script>
+
+      <p><small>Our main run of tickets will be available in mid-July at £229+VAT.</small></p>
+
+
+      <h2>What to Expect</h2>
       <ul>
+        <li>📅 Friday 11-11 in Brighton</li>
+        <li>⏰ 9-6pm all day conference</li>
+        <li>🌟 Eight amazing and inspiring talks</li>
+        <li>😌 Incredibly comfortable seats</li>
+        <li>🏰 Held at <a href="https://www.picturehouses.com/cinema/duke-of-york-s-picturehouse/information">Duke of
+            Yorks</a> cinema</li>
+        <li>🤗 After party to socialise, network or play board games</li>
+        <li>🦾 <a href="https://ffconf.org/scholarship/">Inclusion scholarship programme</a></li>
+        <li>🌈 Sunshine 100% (not) guaranteed</li>
+      </ul>
+
+      <h2>Get involved</h2>
+      <ul class="big">
         <li><a href="https://ffconf.org/cfp-apply">Apply to speak</a></li>
         <li><a class="alt-link"
             href="mailto:events@leftlogic.com?subject=Request%20for%20sponsor%20pack%20%5B2022%5D">Request
@@ -28,6 +76,17 @@
         <li><a href="https://ffconf.org/news">Get the latest news</a></li>
       </ul>
     </main>
+    <footer>
+      <ul>
+        <li><a href="https://ffconf.org/accessibility">Venue Accessibility</a></li>
+        <li><a href="https://ffconf.org/scholarship">Scholarship Programme</a></li>
+        <li><a href="https://ffconf.org/inclusion">Inclusion Statement</a></li>
+        <li><a href="https://ffconf.org/code-of-conduct">Code of Conduct</a></li>
+        <li><a href="https://ffconf.org/terms">Terms</a></li>
+        <li><a href="https://ffconf.org/privacy">Privacy</a></li>
+
+      </ul>
+    </footer>
     <!-- nope, no tracking here today. -->
   </body>
 

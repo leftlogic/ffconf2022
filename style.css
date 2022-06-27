@@ -1,7 +1,8 @@
 :root {
   --c-blue: #17eced;
+  --c-blue-light: #17eced;
   --c-pink: #e72ee2;
-  --c-primary: #222;
+  --c-primary: #333;
 }
 
 * {
@@ -19,6 +20,10 @@
   font-size: 24px;
 }
 
+p {
+  margin: 12px 0;
+}
+
 html {
   min-height: 100vh;
   border-left: 8px solid var(--c-blue);
@@ -27,25 +32,57 @@ html {
 body {
   margin: 0 auto;
   max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
-  background: var(--c-blue);
   color: var(--c-primary);
   font-weight: 600;
-  /* text-decoration: none; */
-  padding: 18px 24px;
+  border-radius: 2px;
 }
 
 a:hover {
+  color: black;
+  outline: 0;
+}
+
+p a {
+  background: none;
+}
+
+main p a:hover {
+  /* outline: 0; */
+  /* color: black; */
+}
+
+.big a {
+  padding: 18px 24px;
+}
+
+.big a:hover,
+a.button:hover {
   background: white;
-  border: 2px solid black;
+  outline: 2px solid black;
   color: black;
 }
 
-a.alt-link {
+.big a {
+  background: var(--c-blue);
+}
+
+.big a.alt-link {
   background: var(--c-pink);
   margin-left: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--c-pink);
+  padding: 18px 48px;
 }
 
 h2 {
@@ -73,9 +110,8 @@ header {
 }
 
 header h1 {
-  grid-area: logo; /* text-align: right; */
+  grid-area: logo;
   margin-right: 20px;
-  /* align-self: end; */
 }
 
 header h1 img {
@@ -91,28 +127,76 @@ header h1 img {
 }
 
 header h2 {
-  grid-area: title; /* align-self: end; */
+  grid-area: title;
   padding-left: 4px;
 }
 
 header h3 {
   grid-area: subtitle;
   align-self: start;
-  background: var(--c-blue); /* padding-left: 20px; */
+  background: var(--c-blue);
   display: inline-block;
-  width: fit-content; /* padding-right: 20px; */
+  width: fit-content;
   padding: 8px 8px;
 }
 
 main {
   padding-top: 40px;
   padding-left: 8px;
+  flex-grow: 1;
 }
 
 main ul li {
+  margin: 8px 0;
+  list-style: none;
+}
+
+main ul.big li {
   list-style: none;
   line-height: 3;
   margin: 20px 0;
+}
+
+main h2 {
+  border-bottom: 2px solid var(--c-blue);
+  box-shadow: inset 0px -10px 0 0px var(--c-blue);
+  padding-left: 4px;
+  margin: 64px 0 16px 0;
+}
+
+main h2:first-child {
+  margin-top: 0px;
+}
+
+footer {
+  border-top: 2px solid var(--c-blue);
+  padding: 12px;
+  padding-bottom: 24px;
+  margin-top: 64px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul a {
+  background: none;
+  font-size: 60%;
+  padding: 0;
+}
+
+.cta {
+  text-align: center;
+  margin: 48px 0;
+}
+
+small {
+  font-style: italic;
+  font-size: 80%;
+}
+
+output {
+  font-family: monospace;
 }
 
 @media screen and (min-width: 440px) {
