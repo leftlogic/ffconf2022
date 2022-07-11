@@ -225,8 +225,13 @@ output {
   font-style: normal;
   background-color: var(--c-pink);
   box-shadow: 0px 0px 0 9px var(--c-pink);
+  box-decoration-break: clone;
   color: white;
   /* position: relative; */
+}
+
+.talks p {
+  line-height: 1.4em;
 }
 
 .talk-title span {
