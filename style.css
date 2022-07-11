@@ -52,13 +52,10 @@ p a {
   background: none;
 }
 
-main p a:hover {
-  /* outline: 0; */
-  /* color: black; */
-}
-
 .big a {
-  padding: 18px 24px;
+  padding: 24px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .big a:hover,
@@ -227,12 +224,13 @@ output {
   margin-right: 12px;
   font-style: normal;
   background-color: var(--c-pink);
+  box-shadow: 0px 0px 0 9px var(--c-pink);
   color: white;
-  position: relative;
-  box-decoration-break: clone;
+  /* position: relative; */
 }
 
 .talk-title span {
+  position: relative;
   color: white;
 }
 
