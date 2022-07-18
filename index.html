@@ -42,9 +42,9 @@
           } else {
             const milliseconds = (t - now);
             const ms = (milliseconds % 1000).toFixed(0).padStart(3, '0');
-            const seconds = ((milliseconds / 1000) % 60).toFixed(0).padStart(2, '0');
-            const minutes = (((milliseconds / (1000 * 60)) % 60)).toFixed(0).padStart(2, '0');
-            const hours = (((milliseconds / (1000 * 60 * 60)) % 24)).toFixed(0).padStart(2, '0');
+            const seconds = ((milliseconds / 1000 | 0) % 60).toFixed(0).padStart(2, '0');
+            const minutes = (((milliseconds / (1000 * 60) | 0) % 60)).toFixed(0).padStart(2, '0');
+            const hours = (((milliseconds / (1000 * 60 * 60) | 0) % 24)).toFixed(0).padStart(2, '0');
             const totalHours = (((milliseconds / (1000 * 60 * 60)))).toFixed(0).padStart(2, '0');
             const days = (((milliseconds / (1000 * 60 * 60 * 24)))).toFixed(0);
 

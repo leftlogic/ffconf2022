@@ -208,8 +208,8 @@ small a {
 }
 
 output {
-  /* font-family: monospace; */
-  font-variant-numeric: tabular-nums;
+  font-family: monospace;
+  /* font-variant-numeric: tabular-nums; */
 }
 
 .sponsors {
