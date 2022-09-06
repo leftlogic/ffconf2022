@@ -214,14 +214,24 @@ output {
 
 .sponsors {
   margin-top: 64px;
+  margin-right: 8px;
 }
 
 .sponsors a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .sponsors img {
   max-width: 100%;
+}
+
+.sponsors.l3 ul {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
 }
 
 .talks {
