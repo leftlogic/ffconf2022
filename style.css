@@ -24,6 +24,10 @@ p {
   margin: 12px 0;
 }
 
+del {
+  color: inherit;
+}
+
 html {
   min-height: 100vh;
   border-left: 8px solid var(--c-blue);
