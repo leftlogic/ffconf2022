@@ -364,7 +364,7 @@ dd {
   margin: 8px 0;
 }
 
-.schedule .time {
+.schedule time {
   float: left;
   margin: 0;
   font-size: 12px;
@@ -379,7 +379,7 @@ dd {
   font-weight: 600;
 }
 
-.schedule .break .time {
+.schedule .break time {
   display: inline;
   background: var(--c-blue);
   color: var(--c-primary);
@@ -397,7 +397,7 @@ dd {
     margin: 8px 8px 0 0;
   }
 
-  .schedule .time {
+  .schedule time {
     float: none;
     display: inline-block;
   }

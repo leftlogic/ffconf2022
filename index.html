@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./style.css">
+    <meta name="bleep" description="bloop">
   </head>
 
   <body>
@@ -21,47 +22,6 @@
       <h3>Returns Friday 11 November</h3>
     </header>
     <main>
-      <!--<h2 id="tickets">Tickets</h2>
-      <p class="time">Our second release of tickets will be available at 10am UK p on 18 July, but if you want a feel for what to
-        expect, please browse and enjoy our <a target="_blank" href="https://ffconf.org/talks">previous event talks</a>.
-      </p>
-
-      <p id="buynow" class="cta"><a class="button" href="https://buytickets.at/ffconf2022/707580">Buy now @
-          £229+VAT</a></p>
-      <p hidden id="available" class="cta"><span class="button">Launching in <output id="output">…</output></span></p>
-      <script type="disabled">
-        const t = Date.parse("2022-07-18T09:00:00Z");
-        const output = document.getElementById('output');
-
-        function update() {
-          const now = Date.now();
-
-          if (now > t) {
-            document.getElementById('available').hidden = true;
-            document.getElementById('buynow').hidden = false;
-          } else {
-            const milliseconds = (t - now);
-            const ms = (milliseconds % 1000).toFixed(0).padStart(3, '0');
-            const seconds = ((milliseconds / 1000 | 0) % 60).toFixed(0).padStart(2, '0');
-            const minutes = (((milliseconds / (1000 * 60) | 0) % 60)).toFixed(0).padStart(2, '0');
-            const hours = (((milliseconds / (1000 * 60 * 60) | 0) % 24)).toFixed(0).padStart(2, '0');
-            const totalHours = (((milliseconds / (1000 * 60 * 60)))).toFixed(0).padStart(2, '0');
-            const days = (((milliseconds / (1000 * 60 * 60 * 24)))).toFixed(0);
-
-            if (days > 0) {
-              output.textContent = `${totalHours}h${minutes}m${seconds}.${ms}`;
-            } else {
-              output.textContent = `${hours}h${minutes}m${seconds}.${ms}`;
-            }
-
-
-            requestAnimationFrame(update);
-          }
-        }
-        update();
-      </script>
-
-      <p><small>This is our main run of tickets priced at £229+VAT.</small></p>-->
 
       <h2 id="what-to-expect">What to Expect</h2>
       <ul>
@@ -102,15 +62,15 @@
       <div class="schedule">
         <ol>
           <li class="break intro">
-            <p class="time">09:00 - 09:40</p>
+            <time>09:00 - 09:40</time>
             <span>Registration</span>
           </li>
           <li class="break intro">
-            <p class="time">09:40 - 09:50</p>
+            <time>09:40 - 09:50</time>
             <span>Opening remarks</span>
           </li>
           <li id="talk-1">
-            <p class="time">09:50 - 10:30</p>
+            <time>09:50 - 10:30</time>
             <div>
               <strong>Designing as we want, to create the experiences that we need</strong>
               <p>Delight. Inclusion. Awareness. Justice. Reparation. That's a lot to embed
@@ -126,7 +86,7 @@
               </div>
           </li>
           <li id="talk-2">
-            <p class="time">10:30 - 11:10</p>
+            <time>10:30 - 11:10</time>
             <div>
               <strong>Capitalism, The Web, And You</strong>
               <p>In 2020, the UK government ordered schools in England not to use material from anti-capitalist writers,
@@ -142,11 +102,11 @@
               </div>
           </li>
           <li class="break">
-            <p class="time">11:10 - 11:40</p>
+            <time>11:10 - 11:40</time>
             <span>Coffee break (30 mins)</span>
           </li>
           <li id="talk-3">
-            <p class="time">11:40 - 12:20</p>
+            <time>11:40 - 12:20</time>
             <div>
               <strong>Design for Developers</strong>
               <p>If you've ever wanted to
@@ -162,7 +122,7 @@
               </div>
           </li>
           <li id="talk-4">
-            <p class="time">12:20 - 13:00</p>
+            <time>12:20 - 13:00</time>
             <div>
               <strong>This Talk is Under Construction: a love letter to the personal website</strong>
               <p>This is a nostalgic look back at the evolution of personal websites, and a look forward to how we can
@@ -177,11 +137,11 @@
               </div>
           </li>
           <li class="break">
-            <p class="time">13:00 - 14:30</p>
+            <time>13:00 - 14:30</time>
             <span>Lunch break (90 mins)</span>
           </li>
           <li id="talk-5">
-            <p class="time">14:30 - 15:10</p>
+            <time>14:30 - 15:10</time>
             <div>
               <strong>Programming with Yarn</strong>
               <p>Crochet and other yarn
@@ -198,7 +158,7 @@
               </div>
           </li>
           <li id="talk-6">
-            <p class="time">15:10 - 15:50</p>
+            <time>15:10 - 15:50</time>
             <div>
               <strong>CSS from the Future, Polyfills and You</strong>
               <p>The future of CSS is coming, and it's coming fast. This talk will look at what new features will mean
@@ -215,11 +175,11 @@
               </div>
           </li>
           <li class="break">
-            <p class="time">15:50 - 16:15</p>
+            <time>15:50 - 16:15</time>
             <span>Ice cream break (25 minutes)</span>
           </li>
           <li id="talk-7">
-            <p class="time">16:15 - 16:55</p>
+            <time>16:15 - 16:55</time>
             <div>
               <strong>Are you ready to <del>see</del> text the doctor?</strong>
               <p>Not waiting on the phone or having to take a morning off work - great!
@@ -236,7 +196,7 @@
               </div>
           </li>
           <li id="talk-8">
-            <p class="time">16:55 - 17:35</p>
+            <time>16:55 - 17:35</time>
             <div>
               <strong>Day Disco</strong>
               <p>Welcome to your obligatory ffconf browser disco! This talk will cover the current state of media APIs
@@ -251,11 +211,11 @@
               </div>
           </li>
           <li class="break outro">
-            <p class="time">17:35 - 17:50</p>
+            <time>17:35 - 17:50</time>
             <span>Closing remarks</span>
           </li>
           <li class="afterparty">
-            <p class="time">17:50 - Late&nbsp;&nbsp;&nbsp;</p>
+            <time>17:50 - Late&nbsp;&nbsp;&nbsp;</time>
             <div><strong>After Party</strong>
               <p><a href="https://goo.gl/maps/qzmhKyku9CD2" target="_blank" rel="noopener">OhSo Social</a> (<a
                   href="https://goo.gl/maps/qzmhKyku9CD2" target="_blank" rel="noopener">map</a>)</p>
@@ -270,10 +230,8 @@
       </div>
 
 
-
-
-      <h2 id="locations">Locations</h2>
       <div class="locations">
+        <h2 id="locations">Locations</h2>
         <div>
           <h3 id="venues">Venues</h3>
           <dl>
@@ -319,9 +277,6 @@
           <li><a href="https://ffconf.org/news">Subscribe for the latest announcements</a></li>
         </ul>
       </div>
-
-
-
 
       <div class="sponsors-wrapper">
         <h2 id="sponsors">Sponsors</h2>
