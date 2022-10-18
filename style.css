@@ -230,6 +230,18 @@ output {
   max-width: 100%;
 }
 
+.sponsors.l2 ul {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 32px;
+}
+
+.sponsors.l3 {
+}
+
 .sponsors.l3 ul {
   display: grid;
   grid-column-gap: 20px;
