@@ -21,15 +21,15 @@
       <h3>Returns Friday 11 November</h3>
     </header>
     <main>
-      <h2 id="tickets">Tickets</h2>
-      <p>Our second release of tickets will be available at 10am UK time on 18 July, but if you want a feel for what to
+      <!--<h2 id="tickets">Tickets</h2>
+      <p class="time">Our second release of tickets will be available at 10am UK p on 18 July, but if you want a feel for what to
         expect, please browse and enjoy our <a target="_blank" href="https://ffconf.org/talks">previous event talks</a>.
       </p>
 
-      <p hidden id="buynow" class="cta"><a class="button" href="https://buytickets.at/ffconf2022/707580">Buy now @
+      <p id="buynow" class="cta"><a class="button" href="https://buytickets.at/ffconf2022/707580">Buy now @
           £229+VAT</a></p>
-      <p id="available" class="cta"><span class="button">Launching in <output id="output">…</output></span></p>
-      <script>
+      <p hidden id="available" class="cta"><span class="button">Launching in <output id="output">…</output></span></p>
+      <script type="disabled">
         const t = Date.parse("2022-07-18T09:00:00Z");
         const output = document.getElementById('output');
 
@@ -61,7 +61,7 @@
         update();
       </script>
 
-      <p><small>This is our main run of tickets priced at £229+VAT.</small></p>
+      <p><small>This is our main run of tickets priced at £229+VAT.</small></p>-->
 
       <h2 id="what-to-expect">What to Expect</h2>
       <ul>
@@ -78,95 +78,199 @@
 
       <h2 id="sessions">The Sessions</h2>
 
-      <!-- <p><small>Until all 8 sessions appear here, <a href="https://ffconf.org/cfp">ffconf's CFP</a> will remain
-          open.</small></p>
-      <p><small>Keep checking back as we reveal more details about our speakers in the coming weeks…</small></p>
- -->
-
       <div class="talks">
         <ol>
-          <li>
-            <p><strong class="talk-title"><span>1. Design for Developers</span></strong><span> If you've ever wanted to
-                learn more about the magical secrets of UI design (trust me, they're no secret at all!), get ready for a
-                tour of fundamental design principles, the building blocks of a successful design and how we put that
-                all together to create something beautiful!
-              </span></p>
+          <li><a href="#talk-1">Designing as we want, to create the experiences that we need</a> <span
+              class="tag">betterment</span></li>
+          <li><a href="#talk-2">Capitalism, The Web, And You</a> <span class="tag">betterment</span></li>
+          <li><a href="#talk-3">Design for Developers</a> <span class="tag">css</span> <span
+              class="tag">creativity</span></li>
+          <li><a href="#talk-4">This Talk is Under Construction: a love letter to the personal website</a> <span
+              class="tag">creativity</span> <span class="tag">standards</span></li>
+          <li><a href="#talk-5">Programming with Yarn</a> <span class="tag">creativity</span> <span
+              class="tag">javascript</span></li>
+          <li><a href="#talk-6">CSS from the Future, Polyfills and You</a> <span class="tag">javascript</span> <span
+              class="tag">css</span></li>
+          <li><a href="#talk-7">Are you ready to <del>&nbsp;see&nbsp;</del> text the doctor?</a> <span
+              class="tag">accessibility</span> <span class="tag">big web ideas</span></li>
+          <li><a href="#talk-8">Day Disco</a> <span class="tag">fun</span> <span class="tag">javascript</span></li>
+        </ol>
+      </div>
+
+      <h2 id="schedule">Day Schedule</h2>
+
+      <div class="schedule">
+        <ol>
+          <li class="break intro">
+            <p class="time">09:00 - 09:40</p>
+            <span>Registration</span>
           </li>
-          <li>
-            <p><strong class="talk-title"><span>2. This Talk is Under Construction: a love letter to the personal
-                  website</span></strong><span>This is a nostalgic look back at the evolution of personal websites, and
-                a look
-                forward to
-                how we can
-                recreate this magic today. It's a manifesto for building something just for the fun of it, and a call to
-                tell your story on your own platform.
-              </span></p>
+          <li class="break intro">
+            <p class="time">09:40 - 09:50</p>
+            <span>Opening remarks</span>
           </li>
-          <li>
-            <p><strong class="talk-title"><span>3. Programming with Yarn</span></strong><span>Crochet and other yarn
-                crafts
-                can
-                be
-                viewed as a
-                form of programming. Without realising it, crocheters
-                interpret their own patterns, thus becoming "computers". This talk explores the analogies between a
-                craft
-                and what we know of programming.</span></p>
-          </li>
-          <li>
-            <p><strong class="talk-title"><span>4. Capitalism, The Web, And You</span></strong><span>In 2020, the UK
-                government
-                <!--(a collection of the most despicable people in British history—which is saying something)-->
-                ordered schools in England not to use material from anti-capitalist writers, likening it to promoting
-                crime or terrorism. This talk
-                is about capitalism, the web, and what people who can create things for the web might do to help
-                separate the two.
-              </span></p>
-          </li>
-          <li>
-            <p><strong class="talk-title"><span>5. CSS from the Future, Polyfills and You</span></strong><span>The
-                future of CSS is coming, and it's coming fast. This talk will look at what new features will mean for
-                how you write interfaces, and how you can keep up to date (or get involved!) with the newest advances.
-              </span></p>
-          </li>
-          <li>
-            <p><strong class="talk-title"><span>6. Designing as we want, to create the experiences that we
-                  need</span></strong><span>Delight. Inclusion. Awareness. Justice. Reparation. That's a lot to embed
+          <li id="talk-1">
+            <p class="time">09:50 - 10:30</p>
+            <div>
+              <strong>Designing as we want, to create the experiences that we need</strong>
+              <p>Delight. Inclusion. Awareness. Justice. Reparation. That's a lot to embed
                 into every workflow. Are there ways that we can combine data and research to empower the people who use
                 our products? Is there anything from critical design that can help us work differently? Let's do some
-                design discourse and design better for the web and beyond.
-
-              </span></p>
+                design discourse and design better for the web and beyond.</p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/1a.jpg">
+                <p><strong>Florence Okoye</strong> <small>(she/her)</small> <a href="https://twitter.com/finokoye"
+                    target="_blank"><img height="14" width="14" src="/images/twitter.svg"
+                      alt="@FINOkoye on twitter"></a></p>
+                <p><strong>Their origin story:</strong> always wanted to do interesting things and making them at least
+                  vaguely useful!</p>
+              </div>
           </li>
-          <li>
-            <p><strong class="talk-title"><span>7. Are you ready to <del>&nbsp;see&nbsp;</del> text the
-                  doctor?</span></strong><span>Not waiting on the phone or having to take a morning off work - great!
+          <li id="talk-2">
+            <p class="time">10:30 - 11:10</p>
+            <div>
+              <strong>Capitalism, The Web, And You</strong>
+              <p>In 2020, the UK government ordered schools in England not to use material from anti-capitalist writers,
+                likening it to promoting crime or terrorism. This talk is about capitalism, the web, and what people who
+                can create things for the web might do to help separate the two.</p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/2a.jpg">
+                <p><strong>Heydon Pickering</strong> <a href="https://twitter.com/heydonworks" target="_blank"><img
+                      height="14" width="14" src="/images/twitter.svg" alt="@heydonworks on twitter"></a></p>
+                <p><strong>Their origin story:</strong> a frontend developer, technical writer, illustrator, and
+                  guitar tone chaser. You may have read one of my books about accessible interface design (Inclusive
+                  Components) or algorithmic CSS (Every Layout, with Andy Bell) or inserted margins between components
+                  using an "owl selector". On the other hand, you may have not.</p>
+              </div>
+          </li>
+          <li class="break">
+            <p class="time">11:10 - 11:40</p>
+            <span>Coffee break (30 mins)</span>
+          </li>
+          <li id="talk-3">
+            <p class="time">11:40 - 12:20</p>
+            <div>
+              <strong>Design for Developers</strong>
+              <p>If you've ever wanted to
+                learn more about the magical secrets of UI design (trust me, they're no secret at all!), get ready for a
+                tour of fundamental design principles, the building blocks of a successful design and how we put that
+                all together to create something beautiful!</p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/3a.jpg">
+                <p><strong>Lex Lofthouse</strong> <a href="https://twitter.com/loftio" target="_blank"><img height="14"
+                      width="14" src="/images/twitter.svg" alt="@loftio on twitter"></a></p>
+                <p><strong>Their origin story:</strong> Ever since my Dad taught me Photoshop when I was 13, I was
+                  doomed to become a designer. Almost 20 years later and I think I can say I'm somewhat ok at it, thanks
+                  Dad.</p>
+              </div>
+          </li>
+          <li id="talk-4">
+            <p class="time">12:20 - 13:00</p>
+            <div>
+              <strong>This Talk is Under Construction: a love letter to the personal website</strong>
+              <p>This is a nostalgic look back at the evolution of personal websites, and a look forward to how we can
+                recreate this magic today. It's a manifesto for building something just for the fun of it, and a call to
+                tell your story on your own platform.</p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/4a.jpg">
+                <p><strong>Sophie Koonin</strong> <small>(she/her)</small> <a href="https://twitter.com/type__error"
+                    target="_blank"><img height="14" width="14" src="/images/twitter.svg"
+                      alt="@type__error on twitter"></a></p>
+                <p><strong>Their origin story:</strong> Something like… "GeoCities, &lt;marquee&gt; and NeoPets
+                  shopfronts"!</p>
+              </div>
+          </li>
+          <li class="break">
+            <p class="time">13:00 - 14:30</p>
+            <span>Lunch break (90 mins)</span>
+          </li>
+          <li id="talk-5">
+            <p class="time">14:30 - 15:10</p>
+            <div>
+              <strong>Programming with Yarn</strong>
+              <p>Crochet and other yarn
+                crafts can be viewed as a form of programming. Without realising it, crocheters interpret their own
+                patterns, thus becoming "computers". This talk explores the analogies between a craft and what we know
+                of programming.</p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/5a.jpg">
+                <p><strong>Lily Madar</strong> <small>(she/her)</small> <a href="https://twitter.com/lily_2point0"
+                    target="_blank"><img height="14" width="14" src="/images/twitter.svg"
+                      alt="@lily_2point0 on twitter"></a></p>
+                <p><strong>Their origin story:</strong> When first introduced to HTML, I spent hours trying to replicate
+                  a Mondrian painting out of &lt;table&gt;s. Then I moved to Flash for more interesting AR experiments
+                  and interactions. Before being forced into JavaScript. I never looked back.</p>
+              </div>
+          </li>
+          <li id="talk-6">
+            <p class="time">15:10 - 15:50</p>
+            <div>
+              <strong>CSS from the Future, Polyfills and You</strong>
+              <p>The future of CSS is coming, and it's coming fast. This talk will look at what new features will mean
+                for how you write interfaces, and how you can keep up to date (or get involved!) with the newest
+                advances.
+              </p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/6a.jpg">
+                <p><strong>Olu Niyi-Awosusi</strong> <small>(they/them)</small> <a
+                    href="https://twitter.com/oluoluoxenfree" target="_blank"><img height="14" width="14"
+                      src="/images/twitter.svg" alt="@oluoluoxenfree on twitter"></a></p>
+                <p><strong>Their origin story:</strong> I loved computers ever since I first set up the dial up as a
+                  kid, and got my start in the traditional millennial way, tweaking Neopets. Later codecademy, and even
+                  later, a bootcamp!</p>
+              </div>
+          </li>
+          <li class="break">
+            <p class="time">15:50 - 16:15</p>
+            <span>Ice cream break (25 minutes)</span>
+          </li>
+          <li id="talk-7">
+            <p class="time">16:15 - 16:55</p>
+            <div>
+              <strong>Are you ready to <del>see</del> text the doctor?</strong>
+              <p>Not waiting on the phone or having to take a morning off work - great!
                 Using tech can speed up so many interactions & some changes are here to stay. But who is excluded when
                 options are digital-first? What can we do to ensure the health of the most vulnerable in society is
-                improved and not hindered by our rush to web-first tech?
-              </span></p>
+                improved and not hindered by our rush to web-first tech?</p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/7a.jpg">
+                <p><strong>Sareh Heidari</strong> <small>(she/her)</small> <a href="https://twitter.com/sareh88"
+                    target="_blank"><img height="14" width="14" src="/images/twitter.svg" alt="@sareh88 on twitter"></a>
+                </p>
+                <p><strong>Their origin story:</strong> Enjoying solving puzzles led to studying maths; then detoured
+                  into nanotechnology in academia. I missed the human element, so trained as a web developer, to use
+                  tech for good. #webaccessibility all the way!</p>
+              </div>
           </li>
-          <li>
-            <p><strong class="talk-title"><span>8. Day Disco</span></strong><span>Welcome to your obligatory ffconf
-                browser disco! This talk will cover the current state of media APIs and what's coming next.</span></p>
+          <li id="talk-8">
+            <p class="time">16:55 - 17:35</p>
+            <div>
+              <strong>Day Disco</strong>
+              <p>Welcome to your obligatory ffconf browser disco! This talk will cover the current state of media APIs
+                and what's coming next.</p>
+              <div class="speaker-details"><img class="avatar" src="/images/speakers/8a.jpg">
+                <p><strong>Ruth John</strong> <a href="https://twitter.com/rumyra" target="_blank"><img height="14"
+                      width="14" src="/images/twitter.svg" alt="@rumyra on twitter"></a></p>
+                <p><strong>Their origin story:</strong> Twenty years ago I finished my degree and promised myself I
+                  wouldn't pursue a job in programming after a disastrous unit in Java... Then someone offered me a PHP
+                  job and I was also pretty bad at that, but quite ok at HTML, CSS & JS it turned out. Never say never,
+                  but ask me again in twenty years.</p>
+              </div>
           </li>
-          <li>More <a href="https://ffconf.org/news">announced</a> in the coming weeks</li>
+          <li class="break outro">
+            <p class="time">17:35 - 17:50</p>
+            <span>Closing remarks</span>
+          </li>
+          <li class="afterparty">
+            <p class="time">17:50 - Late&nbsp;&nbsp;&nbsp;</p>
+            <div><strong>After Party</strong>
+              <p><a href="https://goo.gl/maps/qzmhKyku9CD2" target="_blank" rel="noopener">OhSo Social</a> (<a
+                  href="https://goo.gl/maps/qzmhKyku9CD2" target="_blank" rel="noopener">map</a>)</p>
+              <p>Order some
+                food (until 9PM), join in our board games and enjoy a drink on us (wide range of non-alcoholic and hot
+                drinks also available).</p>
+              <p>OhSo Social is situated right on the seafront, look out for the green
+                doughnut!</p>
+            </div>
+          </li>
         </ol>
-
       </div>
-      <p><small>Are our speaker hard to make out or guess? That's on purpose, we don't announce our speakers right
-          away, but if you would rather know you can <a
-            href="mailto:events@leftlogic.com?subject=Please…who are the speakers?">drop us an email and we'll tell
-            you</a>.</small></p>
 
-      <!-- <script type="exp">
-        const talks = document.querySelector('div.talks ol');
-        talks.classList.add('js-bg');
-        const node = talks.cloneNode(true);
-        node.className = 'js-clone';
-        node.setAttribute('aria-hidden', true);
-        talks.parentNode.appendChild(node);
-      </script> -->
+
+
 
       <h2 id="locations">Locations</h2>
       <div class="locations">
@@ -216,7 +320,10 @@
         </ul>
       </div>
 
-      <div class="sponsors">
+
+
+
+      <div class="sponsors-wrapper">
         <h2 id="sponsors">Sponsors</h2>
         <p>Without our sponsors and supporters, our event would not be possible, please take a moment to look at their
           web sites and find out more about them.</p>

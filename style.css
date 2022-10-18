@@ -14,6 +14,7 @@
   font-size: 3vw;
   color: var(--c-primary);
   font-size: 36px;
+  box-sizing: border-box;
 }
 
 * {
@@ -26,6 +27,7 @@ p {
 
 del {
   color: inherit;
+  font-size: inherit;
 }
 
 html {
@@ -123,11 +125,8 @@ header h1 {
 }
 
 header h1 img {
-  width: 215px;
-  height: 215px;
-}
-
-header h1 img {
+  /* width: 215px;
+  height: 215px; */
   width: 125px;
   height: 125px;
   display: block;
@@ -152,6 +151,11 @@ main {
   padding-top: 40px;
   padding-left: 8px;
   flex-grow: 1;
+}
+
+ul,
+.schedule li > div {
+  margin-right: 4px;
 }
 
 main ul li {
@@ -239,9 +243,6 @@ output {
   padding-bottom: 32px;
 }
 
-.sponsors.l3 {
-}
-
 .sponsors.l3 ul {
   display: grid;
   grid-column-gap: 20px;
@@ -254,8 +255,53 @@ output {
   position: relative;
 }
 
+.schedule img.avatar {
+  width: 100px;
+  height: 100px;
+}
+
 .talks ol {
-  list-style: none;
+  list-style: auto;
+  margin-left: 24px;
+}
+
+.talks li {
+  margin: 16px 0px;
+  font-size: 18px;
+}
+
+.talks li a {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.talks li a,
+.talks li del {
+  /* font-style: initial; */
+  font-weight: normal;
+  font-size: inherit;
+}
+
+.tag {
+  font-size: 14px;
+  background: var(--c-pink);
+  color: white;
+  outline: 2px solid var(--c-pink);
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 600px) {
+  .talks li a {
+    display: inline;
+  }
+  .tag {
+    margin-left: 8px;
+    margin-right: 0;
+  }
+}
+
+.tag:before {
+  content: '#';
 }
 
 .talks .talk-title {
@@ -304,6 +350,149 @@ output {
 
 dd {
   margin-bottom: 24px;
+}
+
+.schedule ol {
+  list-style: none;
+}
+
+.schedule li {
+  display: block;
+  align-items: start;
+  margin: 8px 0;
+}
+
+.schedule .time {
+  float: left;
+  margin: 0;
+  font-size: 12px;
+  color: white;
+  padding: 12px 12px;
+  background: var(--c-pink);
+  margin-right: 12px;
+  white-space: nowrap;
+  display: block;
+  width: fit-content;
+  text-align: center;
+  font-weight: 600;
+}
+
+.schedule .break .time {
+  display: inline;
+  background: var(--c-blue);
+  color: var(--c-primary);
+}
+
+@media screen and (min-width: 600px) {
+  .schedule img.avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .schedule li {
+    display: flex;
+    align-items: start;
+    margin: 8px 8px 0 0;
+  }
+
+  .schedule .time {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.schedule div {
+  padding-top: 4px;
+}
+
+.schedule div.speaker-details {
+  display: grid;
+  grid-template:
+    'a b b' 30px
+    'a c c' auto
+    'a c c' auto;
+  grid-gap: 12px;
+}
+
+.schedule .speaker-details img.avatar {
+  grid-area: a;
+}
+
+.schedule .speaker-details p {
+  margin: 0;
+}
+
+.schedule .speaker-details p:first-of-type {
+  grid-area: b;
+}
+
+.schedule .speaker-details p:first-of-type img {
+  vertical-align: middle;
+}
+
+.schedule .speaker-details p:last-of-type {
+  grid-area: c;
+}
+
+.schedule .speaker-details p:last-of-type strong {
+  font-size: inherit;
+}
+
+.schedule strong,
+.schedule span {
+  font-size: 20px;
+}
+
+.schedule span {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.schedule div p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.schedule .afterparty a {
+  font-size: inherit;
+}
+
+.schedule .afterparty {
+  line-height: 1.4;
+}
+
+.schedule .break {
+  line-height: 1;
+  margin-bottom: 20px;
+  border-top: 2px solid var(--c-blue);
+}
+
+@media screen and (max-width: 599px) {
+  .schedule .speaker-details * {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .schedule div > strong:first-of-type {
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .schedule strong {
+    margin-left: 0;
+    display: inline;
+  }
+
+  .schedule .break {
+    border-top: 2px solid var(--c-blue);
+    border-bottom: 2px solid var(--c-blue);
+  }
+}
+
+.schedule li:not(.break) {
+  border-top: 2px solid var(--c-pink);
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 440px) {
