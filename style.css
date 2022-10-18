@@ -287,6 +287,8 @@ output {
   background: var(--c-pink);
   color: white;
   outline: 2px solid var(--c-pink);
+  padding-left: 4px;
+  padding-right: 4px;
   margin-right: 8px;
 }
 
