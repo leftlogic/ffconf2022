@@ -87,6 +87,7 @@ a.button:hover {
   margin: 0 auto;
   text-align: center;
   background: var(--c-pink);
+  color: white;
   padding: 18px 48px;
 }
 
