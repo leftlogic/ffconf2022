@@ -237,6 +237,7 @@ output {
 
 .sponsors img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .sponsors.l2 ul {
